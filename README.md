@@ -34,3 +34,5 @@ Un **docker-compose.yml** para coordinar ambos servicios dentro del contendor de
 4. Para verlo en el buscador acedemos por medio del enlace: **http://localhost:5000**
 
 ![image](https://github.com/HectorCRZBQ/mongo_route_extractor/assets/148070442/cd12a093-55d3-4792-832f-044d64725e43)
+
+Hector de la Cruz Baquero - [Linkdedin](https://www.linkedin.com/in/h%C3%A9ctor-de-la-cruz-baquero-ba193429b/) - [Webpage](https://hectorcrzbq.github.io/)
