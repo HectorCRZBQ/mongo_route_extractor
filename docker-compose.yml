@@ -1,0 +1,27 @@
+version: '3'
+
+networks:
+  web_network:
+    driver: bridge
+
+services:
+  mongo:
+    build: ./mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - web_network
+
+  web_app:
+    build: ./web_app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+    networks:
+      - web_network
+
+volumes:
+  mongo_data:

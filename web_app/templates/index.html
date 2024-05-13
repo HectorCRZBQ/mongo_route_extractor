@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Scraping</title>
+</head>
+<body>
+    <h2>Descubrir Rutas</h2>
+    <form method="POST" action="/">
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit" name="descubrir_rutas">Descubrir Rutas</button>
+    </form>
+
+    <h2>Rutas Descubiertas</h2>
+    <ul>
+    {% for result in results %}
+        <li>
+            <a href="{{ result }}">{{ result }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <form method="POST" action="/">
+        <button type="submit" name="vaciar_rutas">Vaciar Rutas</button>
+    </form>
+
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>
